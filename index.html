@@ -22,39 +22,49 @@
       <div class="hero">
         <div class="hero-details">
           <img src="./images/logo.svg" alt="logo" class="logo" />
-          <h1 class="headerText"><span>We're</span><br />coming<br />soon</h1>
-          <p class="display-text">
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-          <div class="email-group">
-            <input
-              type="text"
-              placeholder="Email Address"
-              required
-              id="emailField"
-            />
-            <a href="#" class="arrow-icon" onclick="validateEmail()"
-              ><img src="./images/icon-arrow.svg" alt="arrow-icon" />
-            </a>
+          <div class="image-wrapper">
+            <div class="gallery">
+              <picture>
+                <source
+                  media="(min-width:600px)"
+                  srcset="./images/hero-desktop.jpg"
+                />
+                <source
+                  media="(min-width:375px)"
+                  srcset="./images/hero-mobile.jpg"
+                />
+                <img
+                  src="./images/hero-mobile.jpg"
+                  alt="switchimg"
+                  style="max-width: 400px"
+                />
+              </picture>
+            </div>
+
+            <div class="main-content">
+              <h1 class="headerText">
+                <span>We're</span><br />coming<br />soon
+              </h1>
+              <p class="display-text">
+                Hello fellow shoppers! We're currently building our new fashion
+                store. Add your email below to stay up-to-date with
+                announcements and our launch deals.
+              </p>
+              <div class="email-group">
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  required
+                  id="emailField"
+                />
+                <a href="#" class="arrow-icon" onclick="validateEmail()"
+                  ><img src="./images/icon-arrow.svg" alt="arrow-icon" />
+                </a>
+              </div>
+              <p id="emailError"></p>
+            </div>
           </div>
-          <p id="emailError"></p>
         </div>
-      </div>
-      <div class="gallery">
-        <picture>
-          <source
-            media="(min-width:600px)"
-            srcset="./images/hero-desktop.jpg"
-          />
-          <source media="(min-width:375px)" srcset="./images/hero-mobile.jpg" />
-          <img
-            src="./images/hero-mobile.jpg"
-            alt="switchimg"
-            style="max-width: 400px"
-          />
-        </picture>
       </div>
     </main>
 
